@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from "next/head";
 import Image from "next/image";
+import LoginComponent from '../src/Login';
 
 import styles from '../styles/Home.module.css';
 
@@ -12,10 +13,7 @@ const Login: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <div className={styles.innerContainer}>
-                    <input type="text" placeholder="email" />
-                    <input type="password" placeholder="senha" />
-                </div>
+                <LoginComponent />
             </main>
         </div>
     )
